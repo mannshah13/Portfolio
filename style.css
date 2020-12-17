@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+:root{
+  --color-black: black;
+  --color-maroon: rgb(92, 18, 18);
+  --color-orange: orangered;
+  --color-white: white;
+  --color-gray: rgb(216, 210, 210);
+  --color-darkGray: darkGray;
+  --color-darkGray-background: rgb(116, 108, 108);
+  --color-gray: lightGray;
+  --color-blue: #1E3A8A;
+  --color-yellow: yellow;
+  --color-violet: rgb(50, 2, 104);
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header portion */
+/* ============================================== */
+
+header{
+  background-color: var(--color-black);
+
+}
+
+#dropdownMenuButton{
+  color: var(--color-orange);
+  background-color: transparent;
+}
+
+.dropdown{
+  text-align: right;
+  margin-right: 2%;
+}
+
+header{
+  position: relative;
+  height: 800px;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
+}
+
+.name{
+  font-family: 'Merriweather', serif;
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 15%;
+}
+
+.selfIntro{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: var(--color-darkGray);
+  font-size: 22px;
+  margin-bottom: 2%;
+}
+
+.diff{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 1px solid var(--color-gray);
+}
+
+.selfIntro span{
+  color: var(--color-white);
+}
+
+.media-links{
+  margin-top: 6%;
+  display: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.list-profile{
+  display: inline-block;
+  list-style-type: none;
+  padding: 2% 2%;
+  color: var(--color-white);
+}
+
+/* ============================================== */
+
+
+/* ABOUT section */
+
+/* ============================================== */
+#about{
+  background-color: var(--color-darkGray-background);
+  display: flex;
+}
+
+.photo{
+  max-width: 500px;
+  margin-top: 5%;
+}
+
+.profile{
+  margin: 5% 5%;
+  width: 50%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10%;
+}
+
+.aboutMe h2{
+  color: var(--color-white);
+  width: 800px;
+}
+
+.aboutMe{
+  margin: 15%;
+}
+
+.myResume{
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* ============================================== */
+
+
+/* SKILL section */
+/* ============================================== */
+.table{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0 25px;
+}
+
+td{
+  width: 100px;
+}
+
+tr{
+  padding: 1rem 1rem;
+}
+
+.tech{
+  width: 10%;
+}
+
+.myskill h1{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+/* ============================================== */
+
+
+/* Project */
+/* ============================================== */
+
+#project{
+  background-color: var(--color-gray);
+}
+
+.projectTitle{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+.table{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0 25px;
+}
+
+.link{
+  margin-left: 15px;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+/* ================================================= */
+
+
+/* Blogs */
+/* ================================================= */
+#blogs{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+/* ================================================= */
+
+
+/* Carousel */
+/* ================================================= */
+.Testimonials{
+  background-color: var(--color-yellow);
+  background-image: linear-gradient(var(--color-yellow),var(--color-violet));
+}
+
+#testimonial-image{
+  width: 500px!important;
+  height: 600px;
+}
+
+.carousel-inner{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px!important;
+  height: 500px;
+}
+
+.carousel-control-prev {
+  left: 300px;
+}
+
+.carousel-control-next{
+  right: 300px;
+}
+/* ================================================= */
+
+
+/* Done */
+/* ================================================= */
+#completed{
+  margin-top: 3px;
+  padding: 100px 100px;
+  background-color: var(--color-maroon);
+}
+
+#completed h1{
+  color: var(--color-white);
+  text-align: center;
+}
+/* ================================================= */

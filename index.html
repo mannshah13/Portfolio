@@ -4,106 +4,205 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KNOW ME</title>
-  <link href="index.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="developer">MANN</div>
-    <div class="developer">IAMDEVELOPER</div>
-    <ul class="unlist"> 
-      <li class="list"><a class="nav4_Contact" href="profile.html">Profile</a></li>    
-      <li class="list"><a class="nav2_Projects" href="Projects.html">Projects</a></li>
-      <li class="list"><a class="nav3_Blogs" href="blogs.html">Blogs</a></li>
-    </ul>
-  </nav>
 
-  <div class="drop"><button><strong><a class='More-info' href="https://drive.google.com/file/d/1g3OZgRZZY9i6jhi1rYWcku1D-XtDqBF4/view?usp=sharing">Resume</a></strong></button></div>
+  <!-- Header portion -->
+  <!-- ==================================================================== -->
+  <header>
+    <nav>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+          <li><a class="dropdown-item" href="#myskill"><i class="fa fa-bolt" aria-hidden="true"></i> Skills</a></li>
+          <li><a class="dropdown-item" href="#project"><i class="fa fa-briefcase" aria-hidden="true"></i> Projects</a></li>
+          <li><a class="dropdown-item" href="#blogs"><i class="fa fa-pencil" aria-hidden="true"></i> Blogs</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div>
+      <h1 class="name">I am Mann Shah.</h1><br><br>
+      <h3 class="selfIntro">I'm <span>learner 📕 and educator.</span> I am deeply passionate to learn more and more about<span> exploring</span> and <span>development</span>. Let's start scrolling</a>and know more about me!</a>.</h3>
+    </div>
 
-  <img class="profile" src="profile.jpeg"/>
-  <h2 class="name">MANN SHAH</h2>
-  <p class="intro">B.Tech in ICT</p>
-  <p class="intro">ADANI INSTITUTE OF INFRASTRUCTURE ENGINEERING (2019-2023)<br><br></p>
-  <h2 class="intro">ABOUT ME</h2>
-  <p class="intro">My name is Mann. I am learner 📕 and educator. I am deeply passionate to learn more and more about exploring and development.</p>
-  
-  <section class="section">
-    <h1>Technology</h1>
-    <div class="grid">
-      <div>
-        <h3>
-          <img class="tech" src="Python.jpeg">Python
-        </h3>
+    <hr class="diff">
+
+    <div>
+      <ul class="media-links">
+        <a href="mailto:mannjshah01@gmail.com" target="_blank"><li class="list-profile"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></li></a>
+        <a href="https://github.com/Mann-tech13" target="_blank"><li class="list-profile"><i class="fa fa-github fa-lg" aria-hidden="true"></i></li></a>
+        <a href=" https://www.linkedin.com/in/mann-shah-25a215191" target="_blank"><li class="list-profile"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></li></a>
+        <a href="https://twitter.com/MannSha65372934?s=08" target="_blank"><li class="list-profile"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li></a>
+        <a href="https://www.instagram.com/__mann_13_/" target="_blank"><li class="list-profile"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li></a>
+      </ul>
+    </div>
+  </header>
+  <!-- ==================================================================== -->
+
+
+  <!-- ABOUT section -->
+  <!-- ==================================================================== -->
+
+  <section id="about">
+    <div class="aboutToKnow">
+      <div class="photo">
+        <img class="profile" src="../images/profile.jpeg" />
       </div>
 
-      <div>
-        <h3>
-          <img class="tech" src="C.jpeg">C
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="arduino.jpeg">Arduino
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="coppeliasim.jpeg">Coppeliasim
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="Css3.jpeg">CSS3
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="HTML.jpeg">HTML
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="Lua.jpeg">Lua
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="multi.jpeg">Multiprocessing and Multithreading
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="opencv.jpeg">OpenCV
-        </h3>
-      </div>
-
-      <div>
-        <h3>
-          <img class="tech" src="pyqt5.jpeg">PyQt5
-        </h3>
+      <div class="aboutMe">
+        <h2 class="justName">About Me</h2>
+        <strong><p class="intro">ADANI INSTITUTE OF INFRASTRUCTURE ENGINEERING (2019-2023)<br><br></p></strong>
+        <strong><p class="intro">B.Tech in ICT</p></strong>
+        <button type="button" class="btn btn-secondary"><a class='myResume' href="https://drive.google.com/file/d/1g3OZgRZZY9i6jhi1rYWcku1D-XtDqBF4/view?usp=sharing" target="_blank"><strong>Resume</strong></a></button>
       </div>
     </div>
   </section>
-  
-  <div class="media">
-    <h1>Lets Talk..!</h1>
-    <ul class="media-links">
-      <a href="mailto:mannjshah01@gmail.com"><li class="list-profile"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></li></a>
-      <a href="https://github.com/Mann-tech13"><li class="list-profile"><i class="fa fa-github fa-lg" aria-hidden="true"></i></li></a>
-      <a href=" https://www.linkedin.com/in/mann-shah-25a215191"><li class="list-profile"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></li></a>
-      <a href="https://twitter.com/MannSha65372934?s=08"><li class="list-profile"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li></a>
-      <a href="https://www.instagram.com/__mann_13_/"><li class="list-profile"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li></a>
-    </ul>
-  </div>
+
+  <!-- ==================================================================== -->
+
+  <!-- Skills section -->
+  <!-- ==================================================================== -->
+  <section class="myskill">
+    <h1 id="myskill">Technology</h1><br><br><br>
+    <table class="table">
+      <tbody >
+        <tr style="border-color: white;">
+          <td><img class="tech" src="../images/Python.jpeg"><medium>Python</medium></td>
+          <td><img class="tech" src="../images/C.jpeg"><medium>C</medium></td>
+          <td><img class="tech" src="../images/arduino.jpeg"><medium>Arduino</medium></td>
+        </tr>
+        <tr style="border-color: white;">
+          <td><img class="tech" src="../images/HTML.jpeg"><medium>HTML</medium></td>
+          <td><img class="tech" src="../images/multi.jpeg"><medium>Multiprocessing and Multithreading</medium></td>
+          <td><img class="tech" src="../images/opencv.jpeg"><medium>OpenCV</medium></td>
+        </tr>
+        <tr style="border-color: white;">
+          <td><img class="tech" src="../images/coppeliasim.jpeg"><medium>Coppeliasim</medium></td>
+          <td><img class="tech" src="../images/Css3.jpeg"><medium>CSS3</medium></td>
+          <td><img class="tech" src="../images/Lua.jpeg"><medium>Lua</medium></td>
+        </tr>
+        <tr style="border-color: white;">
+          <td><img class="tech" src="../images/pyqt5.jpeg"><medium>PyQt5</medium></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- ==================================================================== -->
 
 
+  <!-- Projects -->
+  <!-- ==================================================================== -->
+  <section id="project">
+    <h2 class="projectTitle">Projects</h2><br><br>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>
+            <h2>Funny Translations</h2>
+            <p>Translate your English statements in different languages of cartoon characters</p>
+            <small>December 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Funny-Translations" target="_blank">View Code</a>
+          </td>
+          <td>
+            <h2>Password/otp generator</h2>
+            <p>Made a GUI version to generate password and OTP with help of pyqt5</p>
+            <small>October 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Password_otp_generator/blob/master/generate_pwd-otp.py" target="_blank">View Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Type fast</h2>
+            <p>Improve your typing speed</p>
+            <small>October 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Type-fast/blob/master/Test_your_typing_speed.ipynb" target="_blank">View Code</a>
+          </td>
+          <td>
+            <h2>GUI-calculator</h2>
+            <p>Do the basic calculations through these GUI calculator from PyQt5 and Qt designer</p>
+            <small>September 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/GUI-calculator/blob/master/Qtdesigner-calculator.py" target="_blank">View Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Image-download</h2>
+            <p>Download Image within fraction of seconds with help of multi threading concepts</p>
+            <small>September 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Image-download/blob/master/Img_download.py" target="_blank">View Code</a>
+          </td>
+          <td>
+            <h2>Playing with Arduino</h2>
+            <p>Code for measuring temperature and humidity with sensors</p>
+            <small>September 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Arduino_code1/blob/master/Temp_Humidity.ino" target="_blank">View Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Equation-solver</h2>
+            <p>Solve your equation whether its linear,quadratic or cubic</p>
+            <small>September 2020</small>
+            <a class="link" href="https://github.com/Mann-tech13/Equation_solver/blob/master/Eqn_solver.ipynb" target="_blank">View Code</a>
+          </td>
+          <td>      
+            <h2>Flip-or-Roll-Apk</h2>
+            <p>Flip a coin or Roll a dice from app made on mit app inventor</p>
+            <small>September 2020</small><br>
+            <a class="link" href="http://ai2.appinventor.mit.edu/b/jw41" target="_blank">Download now</a>
+            <small>(Android supported use any browser except google)</small>
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- ==================================================================== -->
+
+
+  <!-- Blogs -->
+  <!-- ==================================================================== -->
+  <section id="blogs">
+    <h1 class="blogs">Blogs</h1><br><br>
+    <h1>Coming Soon..</h1>
+    <h3>Stay Tuned..!!</h3>
+  </section>
+  <!-- ==================================================================== -->
+
+
+  <!-- Testimonials -->
+  <!-- ==================================================================== -->
+  <section class="Testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/quote-1.jpeg" id="testimonial-image" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/quote-2.jpeg" id="testimonial-image" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- ==================================================================== -->
+
+  <section id="completed">
+    <h1>Thank You...For Visiting</h1>
+  </section>
 </body>
 </html>
