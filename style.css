@@ -217,6 +217,14 @@ tr{
   opacity: 100;
 }
 
+/* .btn .btn-primary{
+  text-decoration: none;
+} */
+
+.myLink{
+  color: white;
+  text-decoration: none;
+}
 /* ================================================= */
 
 
