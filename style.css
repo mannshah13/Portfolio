@@ -13,6 +13,7 @@
   --color-blue: #1E3A8A;
   --color-yellow: yellow;
   --color-violet: rgb(50, 2, 104);
+  --color-lightBlue: #8010ca;
 }
 body{
   margin: 0px;
@@ -49,6 +50,7 @@ header{
   color: var(--color-white);
   text-align: center;
   margin-top: 15%;
+  font-size: 400%;
 }
 
 .selfIntro{
@@ -124,6 +126,14 @@ header{
   color: var(--color-white);
 }
 
+.justName{
+  font-size: 200%;
+}
+
+.intro{
+  font-size: 115%;
+}
+
 /* ============================================== */
 
 
@@ -185,6 +195,28 @@ tr{
   padding: 5px 8px;
   border-radius: 5px;
 }
+
+.link span{
+  opacity: 0;
+}
+
+.link:hover span{
+  color: var(--color-white);
+  opacity: 100;
+}
+
+.btn {
+  background-color: var(--color-lightBlue);
+}
+
+.btn span{
+  opacity: 0;
+}
+
+.btn:hover span{
+  opacity: 100;
+}
+
 /* ================================================= */
 
 
@@ -200,8 +232,9 @@ tr{
 /* Carousel */
 /* ================================================= */
 .Testimonials{
-  background-color: var(--color-yellow);
-  background-image: linear-gradient(var(--color-yellow),var(--color-violet));
+  /* background-color: var(--color-yellow); */
+  /* background-image: linear-gradient(var(--color-yellow),var(--color-violet)); */
+  background: radial-gradient(var(--color-maroon),var(--color-white));
 }
 
 #testimonial-image{
