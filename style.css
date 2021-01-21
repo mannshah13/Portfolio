@@ -236,6 +236,10 @@ tr{
 .d-grid .gap-2{
   text-align: center;
 }
+
+button.btn.btn-primary{
+  width: 400px;
+}
 /* ================================================= */
 
 
