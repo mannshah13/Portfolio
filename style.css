@@ -237,7 +237,7 @@ tr{
   text-align: center;
 }
 
-button.btn.btn-primary{
+button .btn .btn-primary{
   width: 400px;
 }
 /* ================================================= */
