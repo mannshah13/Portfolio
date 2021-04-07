@@ -20,278 +20,98 @@ body{
   padding: 0px;
 }
 
-/* Header portion */
-/* ============================================== */
-
-header{
-  background-color: var(--color-black);
-
+.navbar{
+  padding: 0 0 1rem;
+  width:100%;
 }
 
-#dropdownMenuButton{
-  color: var(--color-orange);
-  background-color: transparent;
+.navbar-nav{
+  margin-left: auto;
+  font-size: 24px;
 }
 
-.dropdown{
-  text-align: right;
-  margin-right: 2%;
+#home{
+  background-position: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-header{
-  position: relative;
-  height: 800px;
-  background-image: url("../images/header-background.jpg");
-  background-size: cover;
+#name{
+  font-size: 32px;
+  font-style: italic;
 }
 
-.name{
-  font-family: 'Merriweather', serif;
-  color: var(--color-white);
+.centered {
+  background: rgb(0, 0, 0);
+  background: rgba(7, 7, 7, 0.7);
+  padding: 10px; 
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  transform: translate( -50%, -50% );
   text-align: center;
-  margin-top: 15%;
-  font-size: 400%;
+  color: white;
 }
 
-.selfIntro{
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  color: var(--color-darkGray);
-  font-size: 22px;
-  margin-bottom: 2%;
-}
-
-.diff{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  border: 1px solid var(--color-gray);
-}
-
-.selfIntro span{
-  color: var(--color-white);
-}
-
-.media-links{
-  margin-top: 6%;
-  display: auto;
-  margin-left: auto;
-  margin-right: auto;
+.about{
+  margin-top: 0%;
+  padding: 5rem;
+  font-family: "Montserrat";
+  font-weight: 300;
   text-align: center;
+  color: black;
+  background-image: url('./images/about.jpg');
+  height: auto;
+  width: auto;
+  padding: 7% 12%;
+  filter: brightness(110%);
 }
 
-.list-profile{
-  display: inline-block;
-  list-style-type: none;
-  padding: 2% 2%;
-  color: var(--color-white);
-}
-
-/* ============================================== */
-
-
-/* ABOUT section */
-
-/* ============================================== */
-#about{
-  background-color: var(--color-darkGray-background);
-  display: flex;
-}
-
-.photo{
-  max-width: 500px;
-  margin-top: 5%;
-}
-
-.profile{
-  margin: 5% 5%;
-  width: 50%;
-  border-radius: 50%;
-  float: left;
-  margin-right: 10%;
-}
-
-.aboutMe h2{
-  color: var(--color-white);
-  width: 800px;
-}
-
-.aboutMe{
-  margin: 15%;
-}
-
-.myResume{
+#resumeBtn{
   text-decoration: none;
   color: var(--color-white);
-}
-
-.justName{
-  font-size: 200%;
-}
-
-.intro{
-  font-size: 115%;
-}
-
-/* ============================================== */
-
-
-/* SKILL section */
-/* ============================================== */
-.table{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: separate;
-  border-spacing: 0 25px;
-}
-
-td{
-  width: 100px;
-}
-
-tr{
-  padding: 1rem 1rem;
 }
 
 .tech{
   width: 10%;
 }
 
-.myskill h1{
-  font-family: 'Merriweather', serif;
+#features, #blogs{
+  background-image: url('./images/colorful-background.jpg');
   text-align: center;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  color: rgb(5, 5, 5);
+  padding: 7% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* ============================================== */
-
-
-/* Project */
-/* ============================================== */
-
-#project{
-  background-color: var(--color-gray);
+#myskills{
+  padding-top: 5%;
 }
 
-.projectTitle{
-  font-family: 'Merriweather', serif;
+#projects, #connect{
   text-align: center;
+  font-weight: bolder ;
+  font-family: "Montserrat";
+  color: rgb(5, 5, 5);
+  padding: 7% 10%; 
+  background-image: url("./images/light-background.jpg");
+  filter: brightness(95%);
+}  
+
+.row>*{
+  padding-bottom: 5%;
 }
 
-.table{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: separate;
-  border-spacing: 0 25px;
+.connect{
+  padding: 5%;
 }
-
-.link{
-  margin-left: 15px;
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--color-blue);
-  padding: 5px 8px;
-  border-radius: 5px;
+.list-inline-item{
+  padding: 2%;
 }
-
-.link span{
-  opacity: 0;
-}
-
-.link:hover span{
-  color: var(--color-white);
-  opacity: 100;
-}
-
-.btn {
-  background-color: var(--color-lightBlue);
-}
-
-.btn span{
-  opacity: 0;
-}
-
-.btn:hover span{
-  opacity: 100;
-}
-
-/* .btn .btn-primary{
-  text-decoration: none;
-} */
-
-.myLink{
-  color: white;
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn .btn-primary{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.d-grid .gap-2{
-  text-align: center;
-}
-
-button .btn .btn-primary{
-  width: 400px;
-}
-/* ================================================= */
-
-
-/* Blogs */
-/* ================================================= */
-#blogs{
-  font-family: 'Merriweather', serif;
-  text-align: center;
-}
-/* ================================================= */
-
-
-/* Carousel */
-/* ================================================= */
-.Testimonials{
-  /* background-color: var(--color-yellow); */
-  /* background-image: linear-gradient(var(--color-yellow),var(--color-violet)); */
-  background: radial-gradient(var(--color-maroon),var(--color-white));
-}
-
-#testimonial-image{
-  width: 500px!important;
-  height: 600px;
-}
-
-.carousel-inner{
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px!important;
-  height: 500px;
-}
-
-.carousel-control-prev {
-  left: 300px;
-}
-
-.carousel-control-next{
-  right: 300px;
-}
-/* ================================================= */
-
-
-/* Done */
-/* ================================================= */
-#completed{
-  margin-top: 3px;
-  padding: 100px 100px;
-  background-color: var(--color-maroon);
-}
-
-#completed h1{
-  color: var(--color-white);
-  text-align: center;
-}
-/* ================================================= */
