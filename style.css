@@ -73,6 +73,11 @@ body{
 
 
 @media only screen and (max-width: 767px) and (min-width: 412px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
   .centered {
     background: rgb(0, 0, 0);
     background: rgba(7, 7, 7, 0.7);
