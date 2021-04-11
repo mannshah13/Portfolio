@@ -19,90 +19,30 @@ body{
   margin: 0px;
   padding: 0px;
 }
-/* 
-.container-fluid{
-  padding: 3% 15%;
-}
-
-.navbar-brand{  
-  font-size: 25px !important;
-  font-family: "Montserrat";
-}
-
-.nav-item{
-  padding: 0 18px;
-}
-
-.nav-link{
-  font-family: "Montserrat";
-  font-size: 1.4rem;
-}
-
-.navbar{
-  padding: 0 0 1rem;
-  width:100%; 
-}
-
-.navbar-nav{
-  margin-left: auto;
-  font-size: 24px; 
-}
-
-#home{
-   background-position: center;
-  margin: 0;
-  width: 100%;
-  height: 100%; 
-  position: relative;
-}
-
-#name{
-  font-size: 32px;
-  font-style: italic;
-} 
-
-.centered {
-  background: rgb(0, 0, 0);
-  background: rgba(7, 7, 7, 0.7);
-  padding: 10px; 
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Montserrat";
-  transform: translate( -50%, -50% );
-  text-align: center;
-  color: white;
-}*/
 
 .container-fluid{
   padding: 3% 15%;
 }
 
-.navbar-brand
-{
- 
+.navbar-brand{ 
  font-size: 25px !important;
  font-family: "Montserrat";
 }
 
 .navbar-nav { 
-         margin-left: auto; 
-     } 
-.nav-item
-{
+margin-left: auto; 
+} 
+
+.nav-item{
  padding: 0 18px;
 }
 
-.nav-link
-{
+.nav-link{
  font-family: "Montserrat";
  font-size: 1.4rem;
 }
 
-.navbar
-{
+.navbar{
  padding:0 0 1rem;
 }
 
@@ -122,7 +62,7 @@ body{
 background: rgba(7, 7, 7, 0.7);
 padding: 10px; 
  position: absolute;
- top: 50%;
+ top: 35%;
  left: 50%;
  font-size: 20px;
  font-weight: bolder;
@@ -145,23 +85,6 @@ padding: 10px;
   padding: 7% 12%;
   filter: brightness(110%);
 }
-
-/* @media only screen and (max-width: 767px) and (min-width: 412px){
-  .centered {
-    background: rgb(0, 0, 0);
-    background: rgba(7, 7, 7, 0.7);
-    padding: 10px; 
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: "Montserrat";
-    transform: translate( -50%, -50% );
-    text-align: center;
-    color: white;
-  }
-} */
 
 #resumeBtn{
   text-decoration: none;
