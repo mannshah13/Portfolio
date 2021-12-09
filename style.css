@@ -2,6 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Trocchi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+:root {
+    --color-black: black;
+    --color-lightblack: rgba(93, 85, 85, 0.849);
+    --color-maroon: rgb(92, 18, 18);
+    --color-orange: rgb(248, 89, 31);
+    --color-white: white;
+    --color-gray: rgb(216, 210, 210);
+    --color-darkGray: rgb(77, 72, 72);
+    --color-darkGray-background: rgb(116, 108, 108);
+    --color-gray: lightGray;
+    --color-blue: #1E3A8A;
+    --color-yellow: yellow;
+    --color-violet: rgb(50, 2, 104);
+    --color-lightBlue: #8010ca;
+    --color-lightGray: rgb(230, 231, 238);
+    --color-bluegreen: rgb(9, 52, 68);
+    --color-bluegreenlight: rgb(76, 100, 109);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ---------------nav--------------------- */
+
 .topnav {
     overflow: hidden;
     background-color: var(--color-lightGray);
@@ -19,8 +46,11 @@
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(55, 36, 228) 50%, rgb(18, 173, 96) 50%);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
 }
 
 .topnav .icon {
@@ -53,29 +83,8 @@
     }
 }
 
-:root {
-    --color-black: black;
-    --color-lightblack: rgba(93, 85, 85, 0.849);
-    --color-maroon: rgb(92, 18, 18);
-    --color-orange: rgb(248, 89, 31);
-    --color-white: white;
-    --color-gray: rgb(216, 210, 210);
-    --color-darkGray: rgb(77, 72, 72);
-    --color-darkGray-background: rgb(116, 108, 108);
-    --color-gray: lightGray;
-    --color-blue: #1E3A8A;
-    --color-yellow: yellow;
-    --color-violet: rgb(50, 2, 104);
-    --color-lightBlue: #8010ca;
-    --color-lightGray: rgb(230, 231, 238);
-    --color-bluegreen: rgb(9, 52, 68);
-    --color-bluegreenlight: rgb(76, 100, 109);
-}
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
+/* --------------------------------------- */
 
 
 /* ---------------home-------------------- */
@@ -84,18 +93,21 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 3% 0;
     background-color: var(--color-lightGray);
 }
 
 .intro {
-    flex: 0.7;
+    flex: 0.5;
     margin-left: 10%;
 }
 
 .prof-img {
-    flex: 0.3;
+    flex: 0.5;
     margin-right: 5%;
+    background-image: url('./images/svg-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 115% 200%;
+    background-position: center;
 }
 
 .name {
@@ -122,6 +134,37 @@ body {
     color: rgb(50, 9, 88);
 }
 
+.connect {
+    padding: 3% 0;
+}
+
+.resumeBtn a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.resumeBtn {
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+    margin: 10px 0;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--color-white);
+    box-shadow: 0 0 20px var(--color-white);
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.resumeBtn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--color-white);
+    text-decoration: none;
+}
+
 
 /* -------------------------------------------------------- */
 
@@ -137,11 +180,6 @@ body {
     width: auto;
     padding: 7% 12%;
     filter: brightness(110%);
-}
-
-#resumeBtn {
-    text-decoration: none;
-    color: var(--color-white);
 }
 
 .tech {
@@ -177,10 +215,6 @@ body {
 
 .row>* {
     padding-bottom: 5%;
-}
-
-.connect {
-    padding: 5%;
 }
 
 .list-inline-item {
