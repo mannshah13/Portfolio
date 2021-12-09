@@ -96,7 +96,7 @@ body {
     align-items: center;
     width: 100%;
     background-image: url("./images/home-bg.p");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 20px 0;
 }
@@ -114,8 +114,10 @@ body {
     background-size: 115% 200%;
     background-position: center;
     padding-bottom: 100px;
-    margin-left: 10%;
-    padding-left: 70px;
+}
+
+.profile {
+    width: 100%;
 }
 
 .name {
@@ -216,11 +218,12 @@ body {
     border-bottom: 1px solid var(--color-bluegreen);
 }
 
+#myskills {
+    padding-top: 5%;
+}
+
 
 /* ---------------------------------------------- */
-
-
-/* #features, */
 
 #blogs {
     background-image: url('./images/colorful-background.jpg');
@@ -231,10 +234,6 @@ body {
     padding: 7% 10%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#myskills {
-    padding-top: 5%;
 }
 
 #projects,
@@ -250,8 +249,4 @@ body {
 
 .row>* {
     padding-bottom: 5%;
-}
-
-.list-inline-item {
-    /* padding: 2%; */
 }
