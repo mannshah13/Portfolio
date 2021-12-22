@@ -96,9 +96,9 @@ body {
     align-items: center;
     width: 100%;
     background-image: url("./images/home-bg.p");
-    background-size: contain;
+    background-size: 110%;
     background-repeat: no-repeat;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 .intro {
@@ -111,13 +111,13 @@ body {
     /* margin-right: 5%; */
     /* background-image: url('./images/svg-bg.svg'); */
     background-repeat: no-repeat;
-    background-size: 115% 200%;
+    background-size: 145% 200%;
     background-position: center;
     padding-bottom: 100px;
 }
 
 .profile {
-    width: 100%;
+    width: 83%;
 }
 
 .name {
@@ -204,7 +204,7 @@ body {
     font-family: "Montserrat";
     padding: 7% 10%;
     color: var(--color-black);
-    background-image: url('https://cdn.cbeditz.com/cbeditz/preview/blue-white-gradiant-powerpoint-background-2-116109704563a3dqfntna.jpg');
+    /* background-image: url('./images/feature-bg.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -270,8 +270,18 @@ ul {
     font-weight: bolder;
     font-family: "Montserrat";
     color: rgb(5, 5, 5);
-    padding: 7% 10%;
+    padding: 0 10%;
     filter: brightness(95%);
+}
+
+.flex-project {
+    display: flex;
+}
+
+.dual {
+    width: 100%;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
 }
 
 .project-head {
