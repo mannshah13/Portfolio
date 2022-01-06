@@ -34,8 +34,10 @@ body {
 .topnav {
     overflow: hidden;
     background-color: var(--color-white);
-    padding: 10px 20%;
-    /* width: 50%; */
+    padding: 5px 20%;
+    width: 100%;
+    display: inline-block;
+    /* position: fixed; */
 }
 
 .topnav a {
@@ -96,9 +98,12 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    padding-top: 30px;
+    /* padding-top: 45px; */
     background-image: url("./images/home-bg.p");
-    background-size: 110%;
+    background-size: 115%;
     background-repeat: no-repeat;
+    z-index: -1;
     /* padding: 20px 0; */
 }
 
@@ -114,11 +119,16 @@ body {
     background-repeat: no-repeat;
     background-size: 145% 200%;
     background-position: center;
-    padding-bottom: 100px;
 }
 
 .profile {
-    width: 83%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile {
+        width: 80%;
+    }
 }
 
 .name {
@@ -214,6 +224,7 @@ body {
     margin: 0 auto;
     width: 18rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 0;
 }
 
 .card-title {
@@ -487,7 +498,7 @@ body {
 /* ----------------------------------------------------- */
 
 .blogs {
-    height: 500px;
+    height: 100vh;
 }
 
 .hexagon-menu {
