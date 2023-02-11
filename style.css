@@ -564,7 +564,7 @@ body {
 }
 
 .hexagon-menu {
-    margin: 5% 35%;
+    margin: 5% 30%;
 }
 
 .hexagon-item {
@@ -583,11 +583,15 @@ body {
 }
 
 .hexagon-item:first-child {
-    margin-left: 0;
+    margin-left: 9%;
 }
 
 .hexagon-item:hover {
     z-index: 1;
+}
+
+.even-row{
+    margin-top: -4%;
 }
 
 .hexagon-item:hover .hex-item:last-child {
