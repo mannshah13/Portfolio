@@ -1,249 +1,1043 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>KNOW ME</title>
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-  <link rel="manifest" href="./favicon/site.webmanifest">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  
-</head>
-<body>
-  <section>
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" id="name" href="">Mann Shah</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link link-active" href="#title">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blogs">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#connect">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  
-    <div class="home">
-      <img src="../images/home.jpeg" id="home" class="img-fluid" alt="wall" width="100%">
-      <div class="centered">
-        <img src="../images/profile.jpeg" id="profie" alt="" width="30%">
-        <h2><b>Hey! I am Mann Shah</b></h2>
-        <hr style="color: rgb(241, 83, 21); height: 3px;">
-        <section>
-          <h4><span style="float: left; font-size: 20px"><b>Pursuing B.Tech in ICT: </b></span></h4><br>
-          <h4 style="font-size: 20px">✨ Adani Institute of Infrastructure Engineering <br> (2019-2023)</h4>
-        </section>
-        <hr width="100%" margin="auto">
-        <h3 style="font-size: 18px" class="underline">Go through my portfolio to know more about me</h3>
-        <h3>⏬</h3>
-      </div>  
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeXoft KE</title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="CodeXoft KE - Full-stack developer specializing in web and mobile development, creating exceptional digital experiences through clean code and intuitive design."
+    />
+    <meta
+      name="keywords"
+      content="web development, mobile apps, full-stack developer, PHP, React Native, MySQL, UI/UX design"
+    />
+    <meta name="author" content="Martin Wainaina" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="CodeXoft KE - Full-stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Professional full-stack developer specializing in web and mobile development."
+    />
+    <meta property="og:image" content="assets/images/me.png" />
+    <meta property="og:url" content="https://codexoft-ke.github.io/" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@codexoft_ke" />
+    <meta
+      name="twitter:title"
+      content="CodeXoft KE - Full-stack Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional full-stack developer specializing in web and mobile development."
+    />
+    <meta name="twitter:image" content="assets/images/me.png" />
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- Scripts -->
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script> -->
+  </head>
 
+  <body class="bg-gray-50">
+    <nav
+      class="bg-white/80 backdrop-blur-md fixed w-full z-10 border-b border-gray-100 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl mr-3"
+            >
+              CX
+            </div>
+            <span class="text-2xl font-bold gradient-text">CodeXoft</span>
+          </div>
 
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors"
+              >Skills</a
+            >
+            <a
+              href="#projects"
+              class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors"
+              >Projects</a
+            >
+            <a
+              href="https://blog.codexoft.tech"
+              class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 font-medium transition-colors"
+              >Blog</a
+            >
+            <a
+              href="#contact"
+              class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all"
+              >Let's Talk</a
+            >
+          </div>
 
-  <section id="about-me">
-    <div class="about">
-      <h1><u><b>About Me 👨</b></u></h1><br>
-      <h3 style="padding: 3%;">I started coding 👨‍💻 in college itself.</h3>      
-      <h3>Started with C language then looking forward to many more technical skills,
-         I came to know that I am very much passionate about coding and developing stuffs.</h3>
-      <h3>I would like to collaborate and work 💼 with the one who share same enthusiasm towards tech stuffs.</h3>
-      <h3 style="padding: 3%;"><u>Know More About Me !</u></h3>
-      <button type="button" class = "btn btn-dark btn-outline-light" ><a  href="https://drive.google.com/file/d/16WgrfrDghO5R7QXUDaS-8ypS-AYUJnHm/view?usp=sharing" id="resumeBtn">Resume</a></button><br>
-    </div>  
-  </section>
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-600 hover:text-gray-900 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                id="menu-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-16 6h16"
+                />
+              </svg>
+              <svg
+                class="h-6 w-6 hidden"
+                id="close-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
 
-
-  <section id="features">
-    <img src="./images/CodingFlatline.svg" alt="">
-    <div class = "row">
-      <div class="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:python" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Python</b></h4>
-      </div>
-
-      <div class="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>HTML5</b></h4>
-      </div>
-
-      <div class="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>CSS3</b></h4>
-      </div>
-
-      <div class="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:react" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>React</b></h4>
-      </div>
-
-      <div class="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:javascript" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Javascript</b></h4>
-      </div>
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:bootstrap" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Bootstrap</b></h4>
-      </div>
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:java" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Java</b></h4>
-      </div>
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:opencv" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Open-cv</b></h4>
-      </div>
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:lua" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Lua</b></h4>
-      </div>
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:c" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>C language</b></h4>
-      </div>
-
-
-      <div class ="feature-box col-6 col-sm-6 col-md-4 col-lg-3" id="myskills">
-        <span class="iconify" data-icon="logos:qt" data-inline="false" data-width="4rem" data-height="4rem"></span>
-        <h4><b>Qt with Python</b></h4>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h1><u><b>Projects</b></u></h1>
-    <br>
-    <br>
-    <div class="row">
-
-      <div class="col-lg-6 ">
-        <section class="section-projects section ow">
-          <ul class="list-non-bullet">
-              <li class="list-item-project"> 
-              <h2> <strong> Motion-alert </strong></h2>
-              <small> Jun, 2021</small>
-              <p>Made a project that detects movement of any object or a person, detects a video and sends it to the author via mail. It also saves all the frames that detect movement.</p>
-              </li>
-              <div class="flex-project">
-                  <a class=" btn btn-dark btn-outline-light" href="https://github.com/Mann-tech13/Motion-alert"> View Source</a>
-              </div>
-          </ul>
-        </section>
-      </div>
-
-      <div class="col-lg-6 ">
-        <section class="section-projects section ow">
-          <ul class="list-non-bullet">
-              <li class="list-item-project"> 
-              <h2> <strong> Temperature and Humidity Sensor</strong></h2>
-              <small> March, 2020</small>
-              <p>Arduino Based Temperature and Humidity sensor using NodeMCU- ESP8266 WiFi module and DHT22 sensor.</p>
-              </li>
-              <div class="flex-project">
-                  <a class=" btn btn-dark btn-outline-light" href="https://github.com/Mann-tech13/Arduino_code1/blob/master/Temp_Humidity.ino"> View Source</a>
-              </div>
-          </ul>
-        </section>
-      </div>
-      <div class="col-lg-6 ">
-        
-        <section class="section-projects section ow">
-          <ul class="list-non-bullet">
-              <li class="list-item-project"> 
-              <h2> <strong>Funny Translations</strong></h2>
-              <small> December 2020</small>
-              <p>
-                Web app made from Javascript using API for language translator that 
-                translates spoken language i.e English to given langualges
-              </p>
-              </li>
-              <div class="flex-project">
-                <a class="btn btn-outline-dark" href="https://funny-translation.netlify.app/"> Live Project</a>
-                  <a class="btn btn-dark btn-outline-light" href="https://github.com/Mann-tech13/Funny-Translations">View Source</a>
-              </div>
-          </ul>
-      </section>
-      </div>
-
-      <div class="col-lg-6 ">
-        <section class="section-projects section ow">
-          <ul class="list-non-bullet">
-              <li class="list-item-project"> 
-              <h2> <strong>Improve your typing speed</strong></h2>
-              <small> October 2020</small>
-              <p>Try different sentences provided in program and know your typing speed and improve it</p>
-              </li>
-              <div class="flex-project">
-                  <a class="btn btn-dark btn-outline-light" href="https://github.com/Mann-tech13/Type-fast/blob/master/Test_your_typing_speed.ipynb"> View Source</a>
-              </div>
-          </ul>
-      </section>
-      </div>
-    </div>
-  </section>
-
-  <section id='blogs'>
-    <h1><u><b>Blogs</b></u></h1>
-    <br>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="B col-sm" id="headingBlog"><h3>
-          1.)&nbsp; &nbsp; &nbsp; Most powerful Domain--> .com v/s all
-        </h3></div>
-        <br>
-        <div><h4>
-          In this blog I have done detailed analysis is done about why ".com" domain is
-          ruling the internet. With all its history till now, everything has been mentioned.
-        </h4></div>
-        <div class="flex-project">
-          <a class="btn btn-dark btn-outline-light" href="https://manntech13.blogspot.com/2021/03/com--most-powerful-domain.html">Read Blog</a>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none absolute left-0 right-0 top-[80px] bg-white"
+        >
+          <div class="px-4 py-3 border-t border-gray-100">
+            <div class="flex flex-col space-y-2">
+              <a
+                href="#home"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+                >About</a
+              >
+              <a
+                href="#skills"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+                >Skills</a
+              >
+              <a
+                href="#projects"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+                >Projects</a
+              >
+              <a
+                href="https://blog.codexoft.tech"
+                target="_blank"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-gray-50"
+                >Blog</a
+              >
+              <a
+                href="#contact"
+                class="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700"
+                >Let's Talk</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="connect">
-    <h4><u><b>Connect With Me !🤝</b></u></h4>
-      <div class="connect">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/mann-shah-25a215191"><span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false" width="35" color="black"></span></a></li>
-          <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/__mann_13_/"><span class="iconify" data-icon="logos:instagram-icon" data-inline="false" width="35"></span></a></li>
-          <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="mailto:mannjshah01@gmail.com"><span class="iconify" data-icon="mdi:gmail" data-inline="false" width="35" color="black"></span></a></li>
-          <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/MannSha65372934?s=08"><span class="iconify" data-icon="foundation:social-twitter" data-inline="false" width="35" color="black"></span></a></li>
-          <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://github.com/Mann-tech13"><span class="iconify" data-icon="logos:github-icon" data-inline="false" width="35"></span></a></li>
-        </ul>
+    <!-- Enhanced Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen pt-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-30"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-30"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left Column - Content -->
+        <div class="text-center z-10 lg:text-left">
+          <div
+            class="flex items-center lg:justify-start justify-center space-x-4 mb-6"
+          >
+            <div
+              class="w-12 h-1 bg-gradient-to-r from-blue-500 to-indigo-600"
+            ></div>
+            <span class="text-gray-600 font-medium"
+              >Welcome to my portfolio</span
+            >
+          </div>
+
+          <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+            <span class="block mb-2">I am</span>
+            <span class="gradient-text typing-animation"></span>
+          </h1>
+
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Full-stack developer specializing in building exceptional digital
+            experiences. Transforming ideas into elegant solutions through clean
+            code and intuitive design.
+          </p>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a
+              href="#projects"
+              class="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all"
+            >
+              View My Work
+              <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+            </a>
+            <a
+              href="#contact"
+              class="inline-flex items-center px-8 py-3 rounded-full border-2 border-gray-300 text-gray-700 font-medium hover:border-blue-500 hover:text-blue-500 transition-all"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="relative z-10 lg:block hidden">
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl transform rotate-6"
+            ></div>
+            <img
+              src="assets/images/me.jpg"
+              alt="Developer at work"
+              class="relative rounded-3xl shadow-xl"
+            />
+          </div>
+
+          <div class="absolute -top-10 right-10 floating">
+            <div class="bg-white p-4 rounded-xl shadow-lg">
+              <i data-feather="code" class="w-8 h-8 text-blue-600"></i>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-10 left-10 floating"
+            style="animation-delay: 1s"
+          >
+            <div class="bg-white p-4 rounded-xl shadow-lg">
+              <i data-feather="smartphone" class="w-8 h-8 text-indigo-600"></i>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
-</body>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main Content  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Left Column - Personal Info -->
+          <div class="space-y-8">
+            <div class="relative">
+              <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+              <div class="w-20 h-2 bg-blue-600 rounded-full mb-8"></div>
+
+              <div class="prose prose-lg text-gray-600 space-y-6">
+                <p>
+                  My name is Mann Shah, a Full-Stack Developer passionate about
+                  building comprehensive digital solutions. I specialize in
+                  creating modern websites and scalable systems that drive
+                  business growth and efficiency.
+                </p>
+                <p>
+                  My expertise spans across the full development stack, from
+                  structuring the interfaces to implementing complex backend
+                  systems. I focus on delivering high-performance solutions that
+                  combine clean code architecture with exceptional user
+                  experiences, helping businesses streamline their operations
+                  and achieve their digital transformation goals.
+                </p>
+              </div>
+
+              <!-- Key Focus Areas -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
+                  <div
+                    class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+                  >
+                    <i data-feather="layout" class="w-6 h-6 text-blue-600"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Architecture Design
+                  </h3>
+                  <p class="text-gray-600">
+                    Creating scalable and maintainable application architectures
+                  </p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow-lg experience-card">
+                  <div
+                    class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4"
+                  >
+                    <i data-feather="users" class="w-6 h-6 text-blue-600"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">Team Building</h3>
+                  <p class="text-gray-600">
+                    Working and progressing with the team
+                  </p>
+                </div>
+              </div>
+
+              <!-- Professional Stats -->
+              <div class="flex flex-wrap gap-8 mt-12">
+                <div class="text-center">
+                  <div class="text-4xl font-bold text-blue-600 mb-2">
+                    2 times
+                  </div>
+                  <div class="text-gray-600">hackathon fianlists</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Experience & Skills -->
+          <div class="space-y-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-semibold mb-6">Professional Journey</h3>
+
+              <!-- Experience Timeline -->
+              <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-blue-200">
+                  <div
+                    class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"
+                  ></div>
+                  <div class="mb-1 flex items-center justify-between">
+                    <h4 class="text-lg font-semibold text-gray-900">
+                      Associate Software Developer, Infocusp Innovations
+                    </h4>
+                    <span class="text-sm text-gray-500">2024 - Present</span>
+                  </div>
+                  <p class="text-gray-600">
+                    Building hih quality web app which includes multi platform
+                    support using Nextjs, Nodejs and Postgres.
+                  </p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-blue-200">
+                  <div
+                    class="absolute left-0 top-0 w-4 h-4 -ml-2 rounded-full bg-blue-600"
+                  ></div>
+                  <div class="mb-1 flex items-center justify-between">
+                    <h4 class="text-lg font-semibold text-gray-900">
+                      Full-Stack Developer, Pedalsup
+                    </h4>
+                    <span class="text-sm text-gray-500 w-20">2023</span>
+                  </div>
+                  <p class="text-gray-600">
+                    Delivered multi functional smooth web apps to client using
+                    Reactjs, Nodejs and Mongodb. Worked on diversified
+                    technologies and helped to built progressive webapps.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Focus -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+              <h3 class="text-2xl font-semibold mb-6">Current Focus</h3>
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i
+                      data-feather="trending-up"
+                      class="w-5 h-5 text-blue-600"
+                    ></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Performance Optimization
+                    </h4>
+                    <p class="text-gray-600">
+                      Enhancing application performance and user experience
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i data-feather="shield" class="w-5 h-5 text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Security Implementation
+                    </h4>
+                    <p class="text-gray-600">
+                      Implementing robust security measures and best practices
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i data-feather="code" class="w-5 h-5 text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">
+                      Modern Technologies
+                    </h4>
+                    <p class="text-gray-600">
+                      Exploring and implementing cutting-edge tech solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <div
+        class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900">Technical Expertise</h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+            Combining modern technologies with provenmethodologies to deliver
+            exceptional solutions
+          </p>
+        </div>
+
+        <!-- Technology Stack Banner -->
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8">
+          
+          <div class="flex flex-wrap justify-center gap-4">
+            <span
+              class="px-6 py-2 bg-blue-50 text-blue-700 rounded-full font-medium"
+              >Java</span
+            >
+            <span
+              class="px-6 py-2 bg-green-50 text-green-700 rounded-full font-medium"
+              >Javascript</span
+            >
+            <span
+              class="px-6 py-2 bg-purple-50 text-purple-700 rounded-full font-medium"
+              >Reactjs</span
+            >
+            <span
+              class="px-6 py-2 bg-indigo-50 text-indigo-700 rounded-full font-medium"
+              >Nodejs</span
+            >
+            <span
+              class="px-6 py-2 bg-pink-50 text-pink-700 rounded-full font-medium"
+              >Database</span
+            >
+          </div>
+        </div>
+      </div>
+
+        <!-- Additional Skills Tags -->
+      </div>
+    </section>
+
+    <!-- Projects Section with Filters -->
+    <section
+      id="projects"
+      class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <!-- Decorative Background Elements -->
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900">Featured Projects</h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+            Exploring innovative solutions through technology
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/projects/task-manager-thumbnail.jpg"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">
+                  Plan your schedule systematically using my app.
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Task Manager - Planify
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >Reactjs</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >Nodejs</span
+                >
+                <span
+                  class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium"
+                  >React-redux</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <a
+                  href="https://github.com/mannshah13/task-manager-app-frontend"
+                  target="_blank"
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+                  Website
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/projects/motion-detect-thumbnail.jpg"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">Detect and record motion in your space</p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Motion Detector
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >OpenCV</span
+                >
+                <span
+                  class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium"
+                  >smtplib</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <a
+                  href="https://github.com/mannshah13/Motion-alert"
+                  target="_blank"
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+                  Website
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/projects/photo-gallery-thumbnail.jpg"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">
+                  Clone of unsplash website that gets images from api and
+                  collects for you in your custom gallery
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Photo Gallery Web
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >Python</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >OpenCV</span
+                >
+                <span
+                  class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-medium"
+                  >smtplib</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <a
+                  href="https://github.com/mannshah13/Unsplash-Clone"
+                  target="_blank"
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  <i data-feather="globe" class="w-4 h-4 mr-2"></i>
+                  Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/mannshah13"
+          target="_blank"
+          class="items-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all flex w-fit mx-auto mt-6"
+        >
+          View All
+          <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900">Latest Insights</h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mt-4"
+          ></div>
+          <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+            Explore the latest articles on development, design, and technology
+            trends.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Blog Card 1 -->
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/blogs/react-fiber-blog-thumbnail.png"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">
+                  Learn about React Fiber, an internal engine change geared to
+                  make React faster and smarter by solving the DOM tree issue.
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Fiber Architecture in React
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >Development</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >Architecture</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <u
+                  ><a
+                    href="https://medium.com/@mannshah.techie/fiber-architecture-in-react-96a7ebbcf44"
+                    target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Read More
+                  </a></u
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 1 -->
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/blogs/tld-blog-thumbnail.png"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">
+                  It's one of the original TLDs, created in 1985. The name comes
+                  from the word "commercial".
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                .com: TLD on Internet
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >Domain</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >Deploy</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <u
+                  ><a
+                    href="https://medium.com/@mannshah.techie/com-highest-level-domain-on-the-internet-cf00b429224"
+                    target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Read More
+                  </a></u
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 1 -->
+          <div
+            class="group relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="assets/images/blogs/rest-api-thumbnail.png"
+                alt="Plan your routine"
+                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <p class="text-sm">
+                  A REST API is an application programming interface (API) that
+                  follows the design principles of the REST architectural style.
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-gray-900">
+                Rest APIs
+              </h3>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium"
+                  >API</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                  >JSON</span
+                >
+              </div>
+              <div class="flex items-center justify-between">
+                <u
+                  ><a
+                    href="https://medium.com/@mannshah.techie/keymarks-before-usingrest-api-7e75c235fc5"
+                    target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Read More
+                  </a></u
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://medium.com/@mannshah.techie"
+          target="_blank"
+          class="items-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium hover:shadow-lg transform hover:-translate-y-1 transition-all flex w-fit mx-auto mt-6"
+        >
+          View All
+          <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+    >
+      <div
+        class="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full filter blur-3xl opacity-20"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900">
+            Let's Create Something Together
+          </h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
+          <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
+            Have a project in mind? Let's discuss how we can bring your ideas to
+            life.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="map-pin" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">Location</h3>
+                  <p class="text-gray-600">Gujarat, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="mail" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">Email</h3>
+                  <a
+                    href="mailto:mannjshah01@gmail.com"
+                    class="text-blue-600 hover:text-blue-800"
+                  >
+                    mannjshah01@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i data-feather="phone" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-900">Phone</h3>
+                  <a
+                    href="tel:+919106876457"
+                    class="text-blue-600 hover:text-blue-800"
+                  >
+                    +91 9106876457
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex space-x-4 mt-8">
+              <a
+                href="https://github.com/mannshah13"
+                target="_blank"
+                class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors"
+              >
+                <i data-feather="github" class="w-6 h-6 text-gray-600"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/manntech/"
+                target="_blank"
+                class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-50 transition-colors"
+              >
+                <i data-feather="linkedin" class="w-6 h-6 text-gray-600"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <form
+              class="space-y-6"
+              action="https://formspree.io/f/xgedvpqv"
+              method="POST"
+              id="contactForm"
+              name="contactForm"
+              >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder="Your name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder="your@email.com"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  placeholder="Project discussion"
+                  name="subject"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  rows="6"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                  placeholder="Tell me about your project..."
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                id="submitting-button"
+                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 px-6 rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform hover:-translate-y-0.5 transition-all duration-150"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
