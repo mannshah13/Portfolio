@@ -237,40 +237,40 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Submit form handler
-    form.addEventListener("submit", (event) => {
-        event.preventDefault();
+    // form.addEventListener("submit", (event) => {
+    //     event.preventDefault();
 
-        // Clear previous messages
-        form.querySelectorAll(".mt-4").forEach(el => el.remove());
+    //     // Clear previous messages
+    //     form.querySelectorAll(".mt-4").forEach(el => el.remove());
 
-        if (validateForm()) {
-            // Simulate an API call
-            const formData = new FormData(form);
-            document.getElementById("submitting-button").setAttribute("disabled",true);
-            document.getElementById("submitting-button").innerHTML = "Submitting...";
-            fetch("api/contact", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => {
-                if (response.ok) {
-                    showMessage("Your message has been sent successfully!", true);
-                    document.getElementById("submitting-button").removeAttribute("disabled");
-                    document.getElementById("submitting-button").innerHTML = "Send Message";
-                    form.reset();
-                } else {
-                    showMessage("An error occurred. Please try again later.", false);
-                    document.getElementById("submitting-button").removeAttribute("disabled");
-                    document.getElementById("submitting-button").innerHTML = "Send Message";
-                }
-            })
-            .catch(() => {
-                showMessage("Unable to send the message. Check your internet connection.", false);
-            });
-        } else {
-            showMessage("Please fill in all required fields correctly.", false);
-        }
-    });
+    //     if (validateForm()) {
+    //         // Simulate an API call
+    //         const formData = new FormData(form);
+    //         document.getElementById("submitting-button").setAttribute("disabled",true);
+    //         document.getElementById("submitting-button").innerHTML = "Submitting...";
+    //         fetch("api/contact", {
+    //             method: "POST",
+    //             body: formData
+    //         })
+    //         .then(response => {
+    //             if (response.ok) {
+    //                 showMessage("Your message has been sent successfully!", true);
+    //                 document.getElementById("submitting-button").removeAttribute("disabled");
+    //                 document.getElementById("submitting-button").innerHTML = "Send Message";
+    //                 form.reset();
+    //             } else {
+    //                 showMessage("An error occurred. Please try again later.", false);
+    //                 document.getElementById("submitting-button").removeAttribute("disabled");
+    //                 document.getElementById("submitting-button").innerHTML = "Send Message";
+    //             }
+    //         })
+    //         .catch(() => {
+    //             showMessage("Unable to send the message. Check your internet connection.", false);
+    //         });
+    //     } else {
+    //         showMessage("Please fill in all required fields correctly.", false);
+    //     }
+    // });
 });
 document.addEventListener("DOMContentLoaded", () => {
     new Typed('.typing-animation', {
